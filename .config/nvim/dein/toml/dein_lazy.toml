@@ -28,6 +28,3 @@ on_ft = 'javascript'
 repo = 'maksimr/vim-jsbeautify'
 on_ft = 'javascript'
 
-[[plugins]]
-repo = 'tamelion/neovim-molokai'
-

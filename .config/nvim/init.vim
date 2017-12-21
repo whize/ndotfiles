@@ -70,9 +70,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " General Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set termguicolors
-colorscheme molokai
-syntax on
-set background=dark
 set number
 set modeline
 set modelines=5
@@ -122,6 +119,9 @@ endif
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,ucs-2le,ucs-2,cp932
+
+set background=dark
+colorscheme molokai
 
 set secure
 
