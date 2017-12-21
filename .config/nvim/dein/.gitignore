@@ -2,4 +2,6 @@ dein/*
 .cache
 !dein/.gitkeep
 repos/*
+cache_nvim
+state_nvim.vim
 

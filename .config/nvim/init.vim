@@ -62,8 +62,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Denite Settings
+" phpcd Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
+let g:deoplete#ignore_sources.php = ['omni']
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
