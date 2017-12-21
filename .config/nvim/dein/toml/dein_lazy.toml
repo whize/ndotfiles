@@ -1,0 +1,33 @@
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+
+[[plugins]]
+repo = 'jnwhiteh/vim-golang'
+on_ft = 'go'
+
+[[plugins]]
+repo = 'keith/tmux.vim'
+on_ft = 'tmux'
+
+[[plugins]]
+repo = 'chase/vim-ansible-yaml'
+
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = 'json'
+
+[[plugins]]
+repo = 'jelera/vim-javascript-syntax'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'maksimr/vim-jsbeautify'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'tamelion/neovim-molokai'
+
