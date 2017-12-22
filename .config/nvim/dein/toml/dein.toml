@@ -33,3 +33,9 @@ on_ft = 'toml'
 [[plugins]]
 repo = 'Shougo/denite.nvim'
 
+[[plugins]]
+repo = 'ozelentok/denite-gtags'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
