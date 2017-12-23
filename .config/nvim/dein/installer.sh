@@ -19,5 +19,20 @@ function installMsgpack() {
 ##
 # install Msgpack for PHP
 #
-php -i |grep msgpack > /dev/null || installMsgpack
+php -i |grep msgpack > /dev/null 2>&1 || installMsgpack
+
+
+##
+# Install GNU global if it is not installed.
+#
+if ! command -v global > /dev/null 2>&1; then
+    echo "Install GNU global"
+
+    ##
+    # Check if Homebrew has been installed.
+    #
+    command -v brew > /dev/null 2>&1 || { echo >&2 "Please install Homebrew (see https://brew.sh/). Aborting"; exit 1; }
+
+    brew install global
+fi
 
