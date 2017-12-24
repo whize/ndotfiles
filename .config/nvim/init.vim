@@ -50,6 +50,9 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
 map <C-n> :NERDTreeToggle<CR>
 
 " open a NERDTree automatically when vim starts up

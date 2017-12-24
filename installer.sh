@@ -8,12 +8,14 @@ HOME_DIR=$HOME
 # install dotfiles
 #
 
-if [ ! -L "$HOME_DIR/.config/nvim" ]; then
-    ln -sfn "$SRC_DIR/.config/nvim" "$HOME_DIR/.config/nvim"
-else
-    rm $HOME/.config/nvim
-    ln -sfn "$SRC_DIR/.config/nvim" "$HOME_DIR/.config/nvim"
-fi
+# DOTFILES=(.curlrc .zshenv .zshrc .zsh .tmux.conf)
 
-sh $HOME_DIR/.config/nvim/dein/installer.sh
+# for file in "${DOTFILES[@]}"; do
+#     ln -sfnv $SRC_DIR/$file $HOME/$file
+# done
+
+#####
+# install nvim settings
+#
+sh $SRC_DIR/.config/nvim/installer.sh
 
