@@ -63,9 +63,8 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" denite Settings
+" Denite Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Denite用プレフィックス
 nmap [denite] <Nop>
@@ -93,9 +92,9 @@ call denite#custom#map('insert', '<C-I>', '<denite:do_action:vsplit>')
 " タブオープンを`<C-O>`
 call denite#custom#map('insert', '<C-O>', '<denite:do_action:tabopen>')
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" denite-gtags Settings
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Denite Gtags Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>a :DeniteCursorWord -buffer-name=gtags_context gtags_context<cr>
 nnoremap <leader>d :DeniteCursorWord -buffer-name=gtags_def gtags_def<cr>
 nnoremap <leader>r :DeniteCursorWord -buffer-name=gtags_ref gtags_ref<cr>
@@ -124,15 +123,8 @@ let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
 let g:deoplete#ignore_sources.php = ['omni']
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Markdown Settings (Previm)
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" au BufRead,BufNewFile *.md set filetype=markdown.gfm
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open Browser Settings (openbrowser)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:previm_open_cmd = 'open -a Google\ Chrome'
-
 let g:netrw_nogx = 1 " disable netrw's gx mapping.
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
