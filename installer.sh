@@ -8,11 +8,11 @@ HOME_DIR=$HOME
 # install dotfiles
 #
 
-# DOTFILES=(.curlrc .zshenv .zshrc .zsh .tmux.conf)
+DOTFILES=(.curlrc .zshenv .zshrc .zsh .tmux.conf)
 
-# for file in "${DOTFILES[@]}"; do
-#     ln -sfnv $SRC_DIR/$file $HOME/$file
-# done
+for file in "${DOTFILES[@]}"; do
+    ln -sfnv $SRC_DIR/$file $HOME/$file
+done
 
 #####
 # install nvim settings

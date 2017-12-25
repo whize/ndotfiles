@@ -7,10 +7,14 @@ zplug "junegunn/fzf-bin", \
     rename-to:"fzf", \
     frozen:1
 
-zplug "motemen/ghq" \
-    as:command, \
-    from:gh-r, \
-    frozen:1
+# zplug "motemen/ghq" \
+#     as:command, \
+#     from:gh-r, \
+#     frozen:1
+
+# install zsh theme (https://github.com/sindresorhus/pure#zplug)
+zplug "mafredri/zsh-async"
+zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 
 zplug "zsh-users/zsh-completions"
 

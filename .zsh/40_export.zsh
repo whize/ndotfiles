@@ -25,6 +25,10 @@ if [ -d ~/.zplug/bin ]; then
     export PATH=~/.zplug/bin:"$PATH"
 fi
 
+if [ -d ~/.local/bin ]; then
+    export PATH=~/.local/bin:"$PATH"
+fi
+
 # token for github access
 if [ -z $HOMEBREW_GITHUB_API_TOKEN ]; then
     echo "Please set HOMEBREW_GITHUB_API_TOKEN environment variable to use Homebrew."
