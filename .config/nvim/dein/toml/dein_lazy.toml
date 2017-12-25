@@ -12,9 +12,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'ozelentok/denite-gtags'
-
-[[plugins]]
 repo = 'rhysd/vim-gfm-syntax'
 on_ft = 'markdown'
 

@@ -43,3 +43,6 @@ repo = 'tyru/open-browser.vim'
 [[plugins]]
 repo = 'mattn/webapi-vim'
 
+[[plugins]]
+repo = 'ozelentok/denite-gtags'
+
