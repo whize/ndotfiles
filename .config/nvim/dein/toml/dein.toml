@@ -46,3 +46,7 @@ repo = 'mattn/webapi-vim'
 [[plugins]]
 repo = 'ozelentok/denite-gtags'
 
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = 'let g:gitgutter_enabled = 1'
+
