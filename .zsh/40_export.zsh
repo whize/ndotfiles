@@ -7,18 +7,30 @@ export FZF_DEFAULT_OPTS='
 --bind=ctrl-z:toggle-all
 '
 
+
 if [ -f ~/.nodebrew/nodebrew ]; then
     export PATH="$HOME"/.nodebrew/current/bin:"$PATH"
+fi
+if [ -d "$HOME"/.anyenv/envs/ndenv ]; then
+    export PATH="$HOME"/.anyenv/envs/ndenv/shims:"$PATH"
 fi
 
 if [ -d /usr/local/var/rbenv ]; then
     export RBENV_ROOT=/usr/local/var/rbenv
     export PATH=$RBENV_ROOT/bin:"$PATH"
 fi
+if [ -d "$HOME"/.anyenv/envs/rbenv ]; then
+    export RBENV_ROOT="$HOME"/.anyenv/envs/rbenv
+    export PATH=$RBENV_ROOT/shims:"$PATH"
+fi
 
 if [ -d ~/.pyenv ]; then
     export PYENV_ROOT="$HOME"/.pyenv
     export PATH=$PYENV_ROOT/bin:"$PATH"
+fi
+if [ -d $HOME/.anyenv/envs/pyenv ]; then
+    export PYENV_ROOT="$HOME"/.anyenv/envs/pyenv
+    export PATH=$PYENV_ROOT/shims:"$PATH"
 fi
 
 if [ -d ~/.zplug/bin ]; then
