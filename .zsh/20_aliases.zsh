@@ -36,3 +36,7 @@ if has 'ansible-vault'; then
     alias mysec='ansible-vault edit ~/Documents/secret.md'
 fi
 
+if has 'ghq' && has 'peco'; then
+    alias cdrepo='cd $(ghq list --full-path | peco)'
+fi
+

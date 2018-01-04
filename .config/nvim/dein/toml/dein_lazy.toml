@@ -16,9 +16,6 @@ repo = 'rhysd/vim-gfm-syntax'
 on_ft = 'markdown'
 
 [[plugins]]
-repo = 'tpope/vim-fugitive'
-
-[[plugins]]
 repo = 'airblade/vim-gitgutter'
 
 [[plugins]]

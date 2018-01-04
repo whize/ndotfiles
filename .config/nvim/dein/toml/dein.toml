@@ -53,3 +53,6 @@ hook_add = 'let g:gitgutter_enabled = 1'
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
