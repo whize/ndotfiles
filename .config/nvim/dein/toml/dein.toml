@@ -23,7 +23,8 @@ on_ft = 'toml'
 repo = 'Shougo/denite.nvim'
 
 [[plugins]]
-repo = 'tomasr/molokai'
+repo = 'skielbasa/vim-material-monokai'
+#repo = 'tomasr/molokai'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
