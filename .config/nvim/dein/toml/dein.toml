@@ -23,7 +23,9 @@ on_ft = 'toml'
 repo = 'Shougo/denite.nvim'
 
 [[plugins]]
-repo = 'skielbasa/vim-material-monokai'
+#repo = 'nlknguyen/papercolor-theme'
+repo = 'jacoborus/tender.vim'
+#repo = 'skielbasa/vim-material-monokai'
 #repo = 'tomasr/molokai'
 
 [[plugins]]

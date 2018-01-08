@@ -150,7 +150,7 @@ let g:airline#extensions#tabline#enabled = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-airline-theme Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_theme = 'materialmonokai'
+let g:airline_theme = 'tender'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PHP Settings
@@ -164,7 +164,7 @@ let php_parent_error_close = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Material Monokai theme settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:materialmonokai_italic=1
+"let g:materialmonokai_italic=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
@@ -180,6 +180,7 @@ set autoindent
 set smartindent
 set smarttab
 set showmatch
+set cursorline
 
 set wildmode=longest,full
 set wildignore&
@@ -221,7 +222,7 @@ set fileencoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,ucs-2le,ucs-2,cp932
 
 set background=dark
-colorscheme material-monokai
+colorscheme tender
 
 set secure
 
