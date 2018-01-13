@@ -38,5 +38,7 @@ fi
 #####
 # install powerline config
 #
+pip install powerline-status
+pip install netifaces
 ln -sfnv $SRC_DIR/.config/powerline $HOME/.config/powerline
 
