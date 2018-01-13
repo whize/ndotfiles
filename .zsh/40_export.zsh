@@ -7,7 +7,9 @@ export FZF_DEFAULT_OPTS='
 --bind=ctrl-z:toggle-all
 '
 
-
+if [ -d ~/.anyenv ]; then
+    export PATH="$HOME/.anyenv/bin:$PATH"
+fi
 if [ -f ~/.nodebrew/nodebrew ]; then
     export PATH="$HOME"/.nodebrew/current/bin:"$PATH"
 fi
