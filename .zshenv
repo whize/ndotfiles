@@ -40,6 +40,7 @@ if [[ $UID == 0 ]]; then
     unset HISTFILE
     export SAVEHIST=0
 fi
+export XDG_CONFIG_HOME=$HOME/.config
 
 [[ -f ~/.secret ]] && source ~/.secret
 

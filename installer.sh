@@ -35,3 +35,8 @@ if [ ! -d ~/.tmux/plugins/tpm ]; then
     git clone git@github.com:tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 fi
 
+#####
+# install powerline config
+#
+ln -sfnv $SRC_DIR/.config/powerline $HOME/.config/powerline
+

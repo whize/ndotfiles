@@ -21,6 +21,3 @@ if [[ -f ~/.zplug/init.zsh ]]; then
     zplug load --verbose
 fi
 
-export PATH="/usr/local/opt/bison/bin:$PATH"
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init - zsh)"
