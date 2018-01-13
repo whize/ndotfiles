@@ -23,4 +23,4 @@ fi
 
 export PATH="/usr/local/opt/bison/bin:$PATH"
 export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+eval "$(anyenv init - zsh)"
