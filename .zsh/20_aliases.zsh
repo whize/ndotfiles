@@ -40,3 +40,7 @@ if has 'ghq' && has 'peco'; then
     alias cdrepo='cd $(ghq list --full-path | peco)'
 fi
 
+if has 'gcp'; then
+    alias cp="gcp"
+fi
+
