@@ -25,6 +25,8 @@ zplug "mattn/jvgrep", \
     as:command, \
     from:gh-r
 
+zplug "zsh-users/zsh-autosuggestions"
+
 zplug "~/.zsh", \
     from:local, \
     defer:2, \
